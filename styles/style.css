@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #aaa;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body #wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+body #wrapper .tile-group {
+  background: #eee;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+body #wrapper .tile-group h2 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+body #wrapper .tile-group h2 span {
+  background: #FFE5B4;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 40px;
+}
+
+.tiles .tile {
+  background: #f06;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+$gap: 10px;
+$max_tile_per_row: 3;
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 calc(#{$gap} * -1) calc(#{$gap} * -1) 0;
+
+    &.flag {
+        .tile:nth-last-child(-n+2) {
+            background-color: #060;
+            flex: 1 0 calc((100% / calc(#{$max_tile_per_row} - 1)) - (#{$gap} * calc(#{$max_tile_per_row} - 1)));
+        }
+
+        &[data-tile-count="1"] .tile {
+            flex-grow: 0;
+        }
+    }
+
+    .tile {
+        flex: 1 0 calc((100% / #{$max_tile_per_row}) - (#{$gap} * #{$max_tile_per_row}));
+        margin: 0 $gap $gap 0;
+    }
+}

@@ -1,0 +1,32 @@
+.tiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 calc(10px * -1) calc(10px * -1) 0;
+}
+
+.tiles.flag .tile:nth-last-child(-n+2) {
+  background-color: #060;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc((100% / calc(3 - 1)) - (10px * calc(3 - 1)));
+          flex: 1 0 calc((100% / calc(3 - 1)) - (10px * calc(3 - 1)));
+}
+
+.tiles.flag[data-tile-count="1"] .tile {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.tiles .tile {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc((100% / 3) - (10px * 3));
+          flex: 1 0 calc((100% / 3) - (10px * 3));
+  margin: 0 10px 10px 0;
+}
+/*# sourceMappingURL=fresspin.css.map */
